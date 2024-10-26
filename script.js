@@ -72,9 +72,10 @@ async function get_answer(text, options, img) {
 	document.querySelector("#question_img").value = "";
 }
 
-document.querySelector("button").onclick = () =>
-	get_answer(
-		document.querySelector("#question_text").value,
-		document.querySelector("#question_options").value,
-		document.querySelector("#question_img").value,
-	);
+document.querySelector("button").onclick = () => 
+    get_answer(
+        document.querySelector("#question_text").value,
+        document.querySelector("#question_options").value,
+        document.querySelector("#question_img").value,
+    );
+
