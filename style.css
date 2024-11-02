@@ -19,9 +19,8 @@ body {
 
 .container {
     position: fixed;
-    inset: 15% 10%;
+    inset: 10% 10%;
     border-radius: .75rem;
-    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +78,20 @@ button {
     font-size: 1.5rem;
     font-family: inherit;
     cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .container > span {
+        font-size: 1.75rem;
+    }
+    .container > input {
+        font-size: .9rem;
+        height: 5%;
+    }
+    .container > button {
+        font-size: 1.25rem;
+        padding: .75rem 1.125rem;
+    }
 }
 
 @keyframes container-load {
